@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Baitap</title>
+
 </head>
 <body>
-$END$
+<input type="number" id="a"> +
+<input type="number" id="b">
+<button onclick="
+    let aElement = document.getElementById('a');
+    let bElement = document.getElementById('b');
+    let valueA = aElement.value;
+    let valueB = bElement.value;
+    let sum = parseInt(valueA) + parseInt(valueB);
+    document.getElementById('result').innerHTML = sum;
+
+
+
+">+</button>
+<h2 id="result">Kết quả</h2>
 </body>
 </html>
