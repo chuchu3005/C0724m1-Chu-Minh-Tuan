@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xethocsinh</title>
+</head>
+<body>
+<h2>Điểm của học sinh</h2>
+<input type="number" id="a">
+<input type="number" id="b">
+<input type="number" id="c">
+<br>
+<button onclick="
+    let aElement = document.getElementById('a');
+    let bElement = document.getElementById('b');
+    let cElement = document.getElementById('c');
+    let valueA = aElement.value;
+    let valueB = bElement.value;
+    let valueC = cElement.value;
+    let sum = parseInt(valueA) + parseInt(valueB) + parseInt(valueC);
+    let tb= sum/3;
+    document.getElementById('result').innerHTML = sum;
+    document.getElementById('dtb').innerHTML = tb;
+
+"></button>
+<h2 id='result'>Tổng điểm</h2>
+<h2 id='dtb'>Điểm trung bình</h2>
+
+
+</body>
+</html>
