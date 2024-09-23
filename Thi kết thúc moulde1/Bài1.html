@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<script>
+    let array = [];
+
+    function addElement(element) {
+        if (array.length < 50) {
+            array.push(element);
+        } else {
+            console.log("Mảng đã đầy! Không thể thêm phần tử.");
+        }
+    }
+
+    function displayArray() {
+        console.log("Mảng hiện tại:", array);
+    }
+
+    function calculateAverageDivisibleBy3() {
+        let sum = 0;
+        let count = 0;
+
+        for (let num of array) {
+            if (num % 3 === 0) {
+                sum += num;
+                count++;
+            }
+        }
+
+        if (count === 0) {
+            console.log("Không có số nào chia hết cho 3.");
+            return 0;
+        }
+
+        let average = sum / count;
+        console.log("Trung bình cộng các số chia hết cho 3:", average);
+        return average;
+    }
+
+    addElement(21);
+    addElement(36);
+    addElement(9);
+    addElement(15);
+    addElement(999);
+    addElement(6666);
+    addElement(32);
+    addElement(72);
+    displayArray();
+    calculateAverageDivisibleBy3();
+    console.log(array);
+
+
+</script>
+</body>
+</html>
